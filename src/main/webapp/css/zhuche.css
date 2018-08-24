@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+a{
+	color: darkblue;
+
+}
+.anniu{
+	background:#FF7600;
+	font-size: 20px;
+	margin-left: 50px;
+	
+}
+a{
+	text-decoration: none;
+}
+ul,li,ol{
+	list-style: none;
+}
+form{
+	width:1000px;
+	height:600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 150px;
+}
+.zhu_ul{
+	width: 1000px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 150px;
+}
+.zhu_ul>li{
+	width: 1000px;
+	height: 40px;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+}
+.zhu_ul>li>span{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	float: left;
+	margin-left: 30px;
+}
+.zhu_ul>li>p{
+	width: 300px;
+	height: 20px;
+	line-height: 20px;
+	float:right;
+	color:red;
+	font-size: 12px;
+}
+.zhu_ul>li>.zhu_ce{
+	width: 222px;
+	height: 30px;
+	float: left;
+	margin-left: 20px;
+}
+.zhu_ul>.zhu_li>label{
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+.zhu_ul>li>select{
+	margin-left: 25px;
+	margin-top: 5px;
+}
+.zhu_li3>input{
+	margin-left: 25px;
+}
+.zhu_li3>a{
+	color: #135a48;
+	margin-left: 10px;
+}
+.zhu_ul>.zhu_li2>input{
+	float: right;
+}
+.zhu_ul>.zhu_li2>span{
+	font-size: 12px;
+	width: 160px;
+	height: 20px;
+	line-height: 20px;
+	display: block;
+	float: right;
+}
+.zhu_ul>li:last-child input{
+	margin-left: 150px;
+
+}
+
+

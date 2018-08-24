@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--全局的setting配置，根据需要添加，比如二级缓存的时候-->
+<plugins>
+    <!--定义物理分页插件-->
+    <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+</plugins>
+</configuration>

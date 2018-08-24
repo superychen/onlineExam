@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cqyc.ssm.dao.StudentDao">
+    <insert id="insert" parameterType="Student">
+        insert into student(usercode,username,password,email,idCard,phone,sex,address,usertype)
+        values(#{usercode},#{username},#{password},#{email},#{idCard},#{phone},#{sex},#{address},1)
+    </insert>
+
+    <select id="findStudent" parameterType="string" resultType="Student">
+        select * from student where usercode=#{usercode}
+    </select>
+
+    <update id="updateScore" parameterType="Student">
+        update student set score=#{score} where id=#{id}
+    </update>
+
+    <select id="findStudents" resultType="Student">
+        select * from student
+    </select>
+    <!--ajax检验用户名是否存在-->
+    
+    <select id="check" parameterType="string" resultType="int">
+        select count(*) from student where usercode=#{usercode}
+    </select>
+
+    <update id="updateStu" parameterType="Student">
+        update student set username=#{username},email=#{email},sex=#{sex},
+        phone=#{phone},address=#{address} where usercode=#{usercode}
+    </update>
+
+</mapper>

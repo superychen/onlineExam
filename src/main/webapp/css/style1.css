@@ -1,0 +1,197 @@
+.img {
+    margin:0;
+    padding:0;
+}
+ul li {
+    list-style:none;
+}
+ul, li {
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+}
+.all{
+    width: 1200px;
+    height: 800px;
+    border-radius: 12px;
+    border: 2px solid #888888;
+    box-shadow: 10px 10px 5px #888888;
+    margin: 0 auto;
+}
+.title{
+    width: 1200px;
+    height: 120px;
+}
+.logo{
+    float: left;
+    height:120px;
+    width: 560px;
+
+}
+.logo1{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.slogan{
+    font-size: 30px;
+    margin-left: 50px;
+    color: rgba(62,153,221,0.9);
+}
+.menu{
+    float: right;
+    height: 120px;
+    width: 560px;
+    position: relative;
+}
+.menu ul{
+    position: absolute;
+    top: 40px;
+    left: 260px;
+}
+.menu ul li{
+    float: right;
+    padding-left: 10px;
+    font-size: 28px;
+}
+.main{
+    width: 1200px;
+    height: 680px;
+    position: relative;
+}
+.backgrand{
+    float: left;
+    height: 680px;
+    width: 600px;
+    position: relative;
+
+}
+.backgrand1{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+.read{
+    width: 320px;
+    height: 450px;
+    position: absolute;
+    left: 780px;
+    top: 120px;
+    border-radius: 12px;
+    border: 2px solid #888888;
+    box-shadow: 10px 10px 5px #888888;
+}
+.message{
+    width: 280px;
+    height: 220px;
+    border-bottom:1px solid #000;
+    margin-left: 20px;
+}
+.message p{
+    font-family: 微软雅黑;
+    font-size: 20px;
+}
+.other{
+    width: 280px;
+    height: 60px;
+    border-bottom:1px solid #000;
+    margin-left: 20px;
+}
+.other>a{
+    width: 120px;
+    height: 37px;
+    display: block;float: left;
+    background: rgba(62,153,221,0.9);
+    border-radius: 15px 15px;
+    text-align: center;
+    line-height: 37px;
+    transition: all 0.3s    ;
+    color: whitesmoke;
+}
+.other>a:nth-child(2){
+    float: right;
+    background: #4CAF50;
+    margin-right: 20px;
+}
+.other>a:hover{
+    background: whitesmoke;
+    color: rgba(62,153,221,0.9);
+}
+.other1{
+
+    margin-left: 20px;
+}
+.other1 p{
+    font-family: 微软雅黑;
+    font-size: 16px;
+}
+.other1>a{
+    width: 280px;
+    height: 45px;
+    display: block;float: left;
+    background: rgba(62,153,221,0.9);
+    border-radius: 15px 15px;
+    text-align: center;
+    line-height: 45px;
+    transition: all 0.3s    ;
+    color: whitesmoke;
+}
+.other1>a:hover{
+    background: whitesmoke;
+    color: rgba(62,153,221,0.9);
+}
+.button {
+    background-color: rgba(62,153,221,0.9);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+.button:hover {
+    background-color: #ffffff;
+    color: rgba(62,153,221,0.9);
+    border: 2px solid rgba(62,153,221,0.9);
+}
+.button1 {
+    background-color: rgba(62,153,221,0.9);
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+.button1:hover {
+    background-color: #ffffff;
+    color: rgba(62,153,221,0.9);
+    border: 2px solid rgba(62,153,221,0.9);
+}
+.button2 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+.button2:hover {
+    background-color: #ffffff;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}

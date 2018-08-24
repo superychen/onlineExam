@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cqyc.ssm.dao.SubjectDao">
+    <insert id="insertXz" parameterType="Subject">
+        insert into subject(title,optionA,optionB,optionC,answer,eaxmtype,explains,eaxmimg)
+        values (#{title},#{optionA},#{optionB},#{optionC},#{answer},#{eaxmtype},#{explains},#{eaxmimg})
+    </insert>
+
+    <insert id="insertPan" parameterType="Subject">
+        insert into subject(title,gou,cha,answer,eaxmtype,eaxmimg,explains)
+        values (#{title},'√','×',#{answer},#{eaxmtype},#{eaxmimg},#{explains})
+    </insert>
+    <select id="findPager" parameterType="Subject" resultType="Subject">
+        select * from subject
+        <where>
+            <if test="title!=null">
+                and title like '%${title}%'
+            </if>
+        </where>
+    </select>
+
+    <select id="equalsAn" parameterType="int" resultType="string">
+        select answer from subject where id=#{id}
+    </select>
+    
+    <select id="findSub" resultType="Subject">
+        select * from subject
+    </select>
+
+    <!--修改选择题-->
+    <update id="updateXuan" parameterType="Subject">
+        update subject set title=#{title},optionA=#{optionA},optionB=#{optionB},optionC=#{optionC},
+        answer=#{answer},eaxmtype=#{eaxmtype},explains=#{explains},eaxmimg=#{eaxmimg} where id=#{id}
+    </update>
+    <!--修改判断题-->
+    <update id="updatePan" parameterType="Subject">
+        update subject set title=#{title},answer=#{answer},eaxmtype=#{eaxmtype},
+        eaxmimg=#{eaxmimg},explains=#{explains} where id=#{id}
+    </update>
+
+    <!--查询单个考试题然后根据id修改-->
+    <select id="findOne" parameterType="int" resultType="Subject">
+        select * from subject where id=#{id}
+    </select>
+</mapper>
